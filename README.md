@@ -112,7 +112,7 @@ public class WS_ResponseHeader
 
                 //access and getting response from webApi
                 //XamWebApi.AccessWebApiAsync(<base url>, <timeout in seconds>, <web api url>, <request header class>)
-                string responseStr = await XamWebApi.AccessWebApiAsync("http://mychoiceforlife.121advisor.com/", 30, "http://mychoiceforlife.121advisor.com/edfapi/user/login", wsReqHeader);
+                string responseStr = await XamWebApi.AccessWebApiAsync("http://localhost/", 30, "http://localhost/edfapi/user/login", wsReqHeader);
 
                 //convert response from JSON to class WS_ResponseHeader, these lines is optional
                 WS_ResponseHeader responseObject = new WS_ResponseHeader();
