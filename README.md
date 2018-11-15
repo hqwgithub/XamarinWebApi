@@ -10,6 +10,8 @@ All projects must be using the same version of Xamarin Forms if not, there will 
 After installing the plugin into your project from nuget: 
 
 1) Study the web api request in JSON format. For example:
+
+```
 {
   "UserName": "karim@mail.com",
   "UserAgentCode": null,
@@ -24,9 +26,11 @@ After installing the plugin into your project from nuget:
     "Password": "Abc@12345"
   }
 }
+```
 
 2) Create two classes that reflect the JSON structure for web api request. For example:
 
+```
  public class WS_RequestHeaderLogin
     {
         public string UserName;
@@ -46,8 +50,11 @@ public class WS_LoginUser
         public string Password;
     }
     
+  ```
+    
   3) If you want to format the response from JSON and extract into any class, study the JSON format of the response first, for example:
-  
+ 
+ ```
   {
     "RequestUserName": "karim@mail.com",
     "RequestDeviceId": null,
@@ -62,9 +69,11 @@ public class WS_LoginUser
     "ResponseMessage": "User karim@mail.com successfully login.",
     "ResponseValue": 0
 }
+```
 
 4) Create a class that reflects JSON structure of the response, for example:
 
+```
 public class WS_ResponseHeader
     {
         public object ResponseObject;
@@ -82,8 +91,11 @@ public class WS_ResponseHeader
         public object ResponseValue;
     }
     
+   ```
+   
 5) Once done, insert function below to any page that needs to access the web api:
 
+```
  public async void accessWebApi()
         {
             WS_LoginUser wsLoginDetails = new WS_LoginUser();
@@ -131,4 +143,5 @@ public class WS_ResponseHeader
             
         }
         
-        6) Please have a look at the sample code here: https://github.com/magiciangambit/XamarinWebApi/
+   ```   
+  6) Please have a look at the sample code here: https://github.com/magiciangambit/XamarinWebApi/
