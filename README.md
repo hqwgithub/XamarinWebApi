@@ -7,7 +7,7 @@ This plugin is to ease developer to access web api in xamarin. You can send requ
 Note: All of your projects under a solution must be using Xamarin Forms 3.3.0.912540 or later
 All projects must be using the same version of Xamarin Forms if not, there will be token error
 
-After installing the plugin into your project from nuget: 
+After installing the plugin into your project from nuget: https://www.nuget.org/packages/Plugin.XamarinWebApi/1.0.0#
 
 1) Study the web api request in JSON format. For example:
 
