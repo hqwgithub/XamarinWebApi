@@ -36,7 +36,7 @@ namespace TestWebApiPlugin
                 //string responseStr = await Task.Factory.StartNew(XamWebApi.AccessWebApiAsync, CancellationToken.None, TaskCreationOptions.DenyChildAttach, TaskScheduler.Default);
 
                 //access and getting response from webApi
-                string responseStr = await XamWebApi.AccessWebApiAsync("http://mychoiceforlife.121advisor.com/", 30, "http://mychoiceforlife.121advisor.com/edfapi/user/login", wsReqHeader);
+                string responseStr = await XamWebApi.AccessWebApiAsync("http://localhost/", 30, "http://localhost/edfapi/user/login", wsReqHeader);
 
                 //convert response from JSON to class WS_ResponseHeader, these lines is optional
                 WS_ResponseHeader responseObject = new WS_ResponseHeader();
